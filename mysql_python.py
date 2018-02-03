@@ -16,10 +16,11 @@ database_name="db_name"
 myConn = MySQLdb.connect(host=hostname,user=username,passwd=password,db=database_name)
 cur=myConn.cursor();
 
-# Configuration of client and Authorization
+# Configuration of client
+# Valid token to be given for authorization 
 intercom = Client(personal_access_token='access_token')
 
-#Fetch list of users 
+#Fetch list of users from DB and create them on intercom 
 cur.execute("select * from user")
 for id,user_name,user_email in cur.fetchall():
     print "id:",id,"user name:",user_name,"user email:",user_email
