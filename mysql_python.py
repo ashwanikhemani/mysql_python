@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-
 """
-Script in Python that goes over our user database and creates users on Intercom
+Script in Python that goes over user database and creates users on Intercom
 
 """
 import MySQLdb
 from intercom.client import Client
 
+#intialize values to connect to the database 
 hostname="host"
 username="db_user"
 password="pwd"
