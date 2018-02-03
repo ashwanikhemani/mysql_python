@@ -1,2 +1,2 @@
 # mysql_python
-Connect to mysql and fetch data using python
+Fetch data from mysql using python and create users on Intercom.
